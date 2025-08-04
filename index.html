@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PG Life</title>
+  <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+<body class="light">
+
+  <!-- Toggle Button -->
+  <div class="theme-toggle">
+    <label class="switch">
+      <input type="checkbox" id="theme-switch">
+      <span class="slider round"></span>
+    </label>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="Elevate Labs" />
+    </div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Features</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+   <div id="practicle-js">
+  <section class="hero">
+    <h1>Welcome to PG Life</h1>
+    <p>Your Home Away From Home</p>
+    <a href="#" class="cta">Get Started</a>
+  </section>
+  </div>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 PG life | Follow us:
+      <a href="#">Instagram</a>
+      <a href="#">LinkedIn</a>
+    </p>
+  </footer>
+
+  <script>
+    const themeSwitch = document.getElementById('theme-switch');
+    const body = document.body;
+
+    themeSwitch.addEventListener('change', () => {
+      body.classList.toggle('dark');
+      body.classList.toggle('light');
+    });
+  </script>
+  <!-- Include the script -->
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+<!-- Initialize the particles -->
+<script>
+  particlesJS("particles-js", {
+    particles: {
+      number: { value: 60 },
+      size: { value: 3 },
+      color: { value: "#ffffff" },
+      line_linked: {
+        enable: true,
+        distance: 150,
+        color: "#ffffff",
+        opacity: 0.4,
+        width: 1
+      },
+      move: {
+        enable: true,
+        speed: 1
+      }
+    },
+    interactivity: {
+      events: {
+        onhover: {
+          enable: true,
+          mode: "repulse"
+        }
+      }
+    },
+    background: {
+      color: "#111827"
+    }
+  });
+</script>
+</body>
+</html>
